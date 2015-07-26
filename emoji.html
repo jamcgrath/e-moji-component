@@ -7,6 +7,7 @@
 	</template>	
 
 	<script>
+
 		Polymer({
 			
 			is: "e-moji",
@@ -15,9 +16,17 @@
 				name: String
 			},
 
+			
 			ready: function() {
-				if(this.name === "shrug") {
-					this.name = "¯\\_(ツ)_/¯"
+				var emojiList = {
+					"shrug" : "¯\\_(ツ)_/¯",
+					"yolo" : "YOLO!!!!!!"
+				};
+				
+				for(key in emojiList) {
+					if(key === this.name) {
+						this.name = emojiList[key];
+					}
 				}
 			}
 		});
