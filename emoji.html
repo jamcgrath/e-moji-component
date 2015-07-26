@@ -1,0 +1,27 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<dom-module id="e-moji">
+
+	<template>
+		<span>{{name}}</span>
+	</template>	
+
+	<script>
+		Polymer({
+			
+			is: "e-moji",
+
+			properties: {
+				name: String
+			},
+
+			ready: function() {
+				if(this.name === "shrug") {
+					this.name = "¯\\_(ツ)_/¯"
+				}
+			}
+		});
+
+	</script>
+
+</dom-module>
