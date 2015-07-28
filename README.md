@@ -7,6 +7,6 @@ To display emoji with a single tag add
 ```
 or 
 ```
-<emoji name=""smiling face with open mouth and smiling eyes"></emoji>
+<e-moji name=""smiling face with open mouth and smiling eyes"></e-moji>
 ```
 name can be an alias or the emoji description as found in gemoji
